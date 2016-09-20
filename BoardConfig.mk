@@ -12,14 +12,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# inherit from common hlte
--include device/samsung/hlte-common/BoardConfigCommon.mk
+# inherit from common frescolte
+-include device/samsung/frescolte-common/BoardConfigCommon.mk
 
-TARGET_OTA_ASSERT_DEVICE := hltexx,SM-N9005,hlte,hlteskt,hltektt,SM-N900S,SM-N900K
+TARGET_OTA_ASSERT_DEVICE := hltexx,SM-N9005,hlte,hlteskt,hltektt,SM-N900S,SM-N900K,frescolteskt,frescoltektt,frescoltelgt,SM-N750S,SM-N750K,SM-N750L
 
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_msm
-TARGET_LIBINIT_DEFINES_FILE := device/samsung/hlte/init/init_hlte.cpp
+TARGET_LIBINIT_DEFINES_FILE := device/samsung/frescolte/init/init_frescolte.cpp
 TARGET_UNIFIED_DEVICE := true
 
 # Partitions
@@ -31,4 +31,4 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 TARGET_USERIMAGES_USE_EXT4 := true
 
 # inherit from the proprietary version
--include vendor/samsung/hlte/BoardConfigVendor.mk
+-include vendor/samsung/frescolte/BoardConfigVendor.mk
